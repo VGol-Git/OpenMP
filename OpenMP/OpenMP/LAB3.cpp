@@ -8,7 +8,7 @@ int main() {
 
 	srand(time(0));
 
-	int i; 
+	int i;   
 	bool key=0;
 	printf(" Size of arrays : %d:\n\n", N);
 	do
