@@ -39,6 +39,7 @@ int main() {
 				total += (B[i] + C[i]);
 
 			}
+			 
 			else (A[i] == 1 || B[i] == 1) ? 0 : total += (B[i] - A[i]);
 		}
 
