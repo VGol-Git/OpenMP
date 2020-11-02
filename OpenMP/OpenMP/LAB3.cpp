@@ -29,6 +29,7 @@ int main() {
 			A[i] = 1 + abs(rand() % 10);
 			B[i] = 1 + abs(rand() % 10);
 			C[i] = 1 + abs(rand() % 10);
+		
 		}
 #pragma omp for reduction (+:total)
 		for (i = 0; i < N; i++)
