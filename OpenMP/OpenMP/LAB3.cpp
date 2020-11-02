@@ -18,7 +18,7 @@ int main() {
 		key ? printf(" Parallel :\n") : printf(" No parallel :\n");
 		int* A = new int[N];
 		int* B = new int[N];
-		int* C = new int[N];
+		int* C = new int[N]; 
 
 	double time = omp_get_wtime();
 #pragma omp parallel shared(A , B , C) private(i) if(key)
