@@ -44,6 +44,7 @@ int main() {
 				}
 
 				else if (!(A[i] == 1 || B[i] == 1)) {
+					#pragma omp atomic 
 					total += (B[i] - A[i]);
 				}
 			}
@@ -76,7 +77,7 @@ int main() {
 			else (A[i] == 1 || B[i] == 1) ? 0 : the_correct_result += (B[i] - A[i]);
 		}
 		printf("the_correct_result :%d\n", the_correct_result);	// показывает, что правильный ответ total1
-		printf("__________________________\n", time);
+		printf("__________________________\n");
 		delete[] A;
 		delete[] B;
 		delete[] C;
